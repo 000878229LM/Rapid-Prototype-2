@@ -14,10 +14,10 @@ public class Bullet : MonoBehaviour
         // We need to have the bullets fetch the following when created.
         // 1. They need to have their colour, determined by the player script. 
         // 2. They need to have their direction of travel, determined by inverting their angle relative to the player. 
+
         
         
-        // No idea what this does. - Payton 
-        //GetComponent<Bullet>();
+        
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //This either destroys the bullet when it collides with non platforms, or it destroys the object. 
-        if (collision.gameObject.tag != "PlatformPrefab")
+        if (collision.gameObject.tag != "PlatformPrefab" || collision.gameObject.tag != "Player")
         {
             Bullet.Destroy(collision.gameObject);
         }
