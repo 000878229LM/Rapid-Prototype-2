@@ -5,7 +5,7 @@ public class ColourPlatform : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int PlatformColour; 
     public bool PlatformActive;
-    public int BulletColour = 1;
+    public int BulletColour;
 
     void Start()
     {
