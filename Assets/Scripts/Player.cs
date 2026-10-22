@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
         // This should allow us to spawn the actual bullets upon left clicking, 
         // but I dont know how to write it. 
-        Instantiate(bulletPrefab, BulletTarget);
+        //Instantiate(bulletPrefab, BulletTarget);
         return;
     }
 }
