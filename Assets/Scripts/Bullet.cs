@@ -10,13 +10,15 @@ public class Bullet : MonoBehaviour
     public Vector3 BulletDirection;
     public float BulletSpeed;
     public Vector3 MousePosition; //Where the bullet will go, where the player clicked
+
+    public float directBullet;
     void Start()
     {
         // We need to have the bullets fetch the following when created.
         // 2. They need to have their direction of travel, determined by inverting their angle relative to the player. 
 
         MousePosition = Input.mousePosition;
-
+        Debug.Log(MousePosition); 
         GetBulletColour(); //Gets at start so player can't change the bullet after it's fired
         ChangeColour();
 
@@ -27,8 +29,9 @@ public class Bullet : MonoBehaviour
     {
         DestroyBullet();
 
-        // This should work as is to move the bullet towards its target. 
-        transform.position = Vector3.MoveTowards(transform.position, MousePosition, BulletSpeed * Time.deltaTime);
+        // This should work as is to move the bullet towards its target.
+       //transform.position = Vector3.MoveTowards(transform.position, MousePosition, BulletSpeed * Time.deltaTime); 
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -79,7 +82,7 @@ public class Bullet : MonoBehaviour
 
 
     /// <summary>
-    /// Just some garbage I was trying
+    /// Just some garbage I was trying - Liam
     /// </summary>
     void MovementCode2()
     {
