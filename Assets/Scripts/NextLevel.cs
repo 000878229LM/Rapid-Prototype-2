@@ -13,14 +13,7 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (player.hasKey)
-            {
-                SceneManager.LoadScene("level2");
-            }
-            else
-            {
-                SceneManager.LoadScene("endscreennokey");
-            }
+            SceneManager.LoadScene("Level2");
         }
     }
 }
