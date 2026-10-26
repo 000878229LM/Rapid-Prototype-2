@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        transform.rotation = Quaternion.identity;
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
@@ -145,6 +146,8 @@ public class Player : MonoBehaviour
         // Synchronize the animator's parameters to this player so it can
         // automatically control the player's animation.
         animator.SetBool("isGrounded", isGrounded);
+
+        
     }
 
     // Runs every time we change something in the inspector of this component,
