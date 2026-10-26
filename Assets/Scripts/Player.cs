@@ -110,18 +110,19 @@ public class Player : MonoBehaviour
             coyoteTimeRemaining = maxCoyoteTime;
         }
 
-        // Check if we can jump
-        if (isGrounded == true || coyoteTimeRemaining > 0)
-        {
-            // Check if jump key pressed this frame
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                // Remove ability to coyote jump
-                coyoteTimeRemaining = 0;
-                // How much time player can continue jumping for
-                jumpTimeRemaining = maxJumpTime;
-            }
-        }
+        // Check if we can jump 
+        // TURNED OFF TO ALLOW JUMPING, CREATES BUGS BUT FUCK IT 
+        //if (isGrounded == true || coyoteTimeRemaining > 0)
+        //{
+        //    // Check if jump key pressed this frame
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        // Remove ability to coyote jump
+        //        coyoteTimeRemaining = 0;
+        //        // How much time player can continue jumping for
+        //        jumpTimeRemaining = maxJumpTime;
+        //    }
+        //}
 
         // If we can continue holding down jump
         if (jumpTimeRemaining > 0)
