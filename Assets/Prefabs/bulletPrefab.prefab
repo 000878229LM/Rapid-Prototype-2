@@ -110,6 +110,7 @@ MonoBehaviour:
   BulletDirection: {x: 0, y: 0, z: 0}
   BulletSpeed: 5
   MousePosition: {x: 0, y: 0, z: 0}
+  directBullet: 0
 --- !u!58 &5424655490528720155
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126,7 +127,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
