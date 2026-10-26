@@ -249,12 +249,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.002674445, y: 0, z: -0, w: 0.9999964}
+  m_LocalPosition: {x: 8.72, y: 0.41301513, z: -20.002495}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1826473311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -587,7 +587,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 753049490289692014, guid: 01ac1c4ff8eb0ba4f932dbd1ac8a1e1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519420032}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4351721330483677147, guid: 01ac1c4ff8eb0ba4f932dbd1ac8a1e1a, type: 3}
       insertIndex: -1
@@ -776,6 +779,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &1826473311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 753049490289692014, guid: 01ac1c4ff8eb0ba4f932dbd1ac8a1e1a, type: 3}
+  m_PrefabInstance: {fileID: 1685393975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6117684362444451185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -845,7 +853,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1685393975}
   - {fileID: 6117684362444451185}
