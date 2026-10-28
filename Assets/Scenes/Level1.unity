@@ -1319,7 +1319,7 @@ MonoBehaviour:
     m_Bits: 0
   raycastDistance: 0.05
   BulletColour: 0
-  Bullet: {fileID: 0}
+  Bullet: {fileID: 2253354839460660007, guid: 6d503663aa1ce134093cea53acacdffb, type: 3}
 --- !u!1001 &1966000500
 PrefabInstance:
   m_ObjectHideFlags: 0
