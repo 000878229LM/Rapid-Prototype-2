@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // How fast do we want the player to move?
     public float moveSpeed = 10f;
     // How fast do they jump?
-    public float jumpSpeed = 10f;
+    public float jumpSpeed = 2f;
     // For how long can they press button to jump to gain extra height?
     public float maxJumpTime = 0.300f; // in seconds
     // For how long after falling off an edge can they still jump?
@@ -37,7 +37,6 @@ public class Player : MonoBehaviour
     // How long players have left to press button to jump to gain extra height
     private float jumpTimeRemaining;
 
-
     void Update()
     {
         transform.rotation = Quaternion.identity;
@@ -49,6 +48,12 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             shootBullet();
+        }
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame)
+        {
+
+            GetComponent<Rigidbody2D>().linearVelocityY = jumpSpeed;
+
         }
 
 
@@ -126,22 +131,22 @@ public class Player : MonoBehaviour
         //}
 
         // If we can continue holding down jump
-        if (jumpTimeRemaining > 0)
-        {
-            // Are we holding spacebar this frame?
-            if (Input.GetKey(KeyCode.Space))
-            {
-                // Add force for jumping
-                rb2d.linearVelocityY = jumpSpeed;
-            }
-            else
-            {
-                // End jump time
-                jumpTimeRemaining = 0;
-            }
-            // Decrement timer
-            jumpTimeRemaining -= Time.deltaTime;
-        }
+        //if (jumpTimeRemaining > 0)
+        //{
+        //    // Are we holding spacebar this frame?
+        //    if (Input.GetKey(KeyCode.Space))
+        //    {
+        //        // Add force for jumping
+        //        rb2d.linearVelocityY = jumpSpeed;
+        //    }
+        //    else
+        //    {
+        //        // End jump time
+        //        jumpTimeRemaining = 0;
+        //    }
+        //    // Decrement timer
+        //    jumpTimeRemaining -= Time.deltaTime;
+        //}
 
         // Synchronize the animator's parameters to this player so it can
         // automatically control the player's animation.
