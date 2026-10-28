@@ -1,6 +1,6 @@
 Rapid Prototype 2   
 Github \- [https\://github.com/000878229LM/Rapid-Prototype-2](https://github.com/000878229LM/Rapid-Prototype-2)  
-Designer Commentary Video \-
+Designer Commentary Video \- https://www.youtube.com/watch?v=rJGGpLvU2_E
 
 Name  
 Paintball Platforming
