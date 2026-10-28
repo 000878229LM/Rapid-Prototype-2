@@ -1,3 +1,68 @@
-# Group 6 Prototype 2
-Here is the docs, update to be in md when done:
-https://docs.google.com/document/d/1-IutPEE8tHuZ0FPGcnAdzXWMIGwWqaQ6eYi5_8Ruu08/edit?usp=drivesdk
+Rapid Prototype 2   
+Github \- [https\://github.com/000878229LM/Rapid-Prototype-2](https://github.com/000878229LM/Rapid-Prototype-2)  
+Designer Commentary Video \-
+
+Name  
+Paintball Platforming
+
+Description  
+A 2-D platformer in which the player has a paintball gun that shoots specific pellets at blocks that are the same colour. This makes the platform solid.  
+Concept Art  
+![][image1]  
+Objective Statement  
+Can players use something as simple as a colour to navigate through a game?
+
+Mechanics   
+\- Paintball gun  
+\- Paintball (0 \= red, 1 \= green, 2 \= blue)
+
+Controls  
+A \- Move Left  
+D \- Move Right  
+W \- Jump  
+E \- Change colour
+
+Prefabs  
+Player  
+Colour Balls
+
+- Bullet is spawned on player position. Bullet saves location of where the player clicked. Bullet heads to location. If it collides with the platform, check if the colour is the same. If not, the bullet continues offscreen and is deleted. If the same, the bullet is deleted and the platform is made solid.
+
+Platform (Base)
+
+- Has collisions, turned on or off by shooting at it  
+- If the platform is turned off, it will ignore player collision.
+
+Platform 1 (Red)
+
+- Long platform giving the player lots of room to plan their next shot
+
+Platform 2 (Blue)
+
+- Short platform giving the player less room to plan their next shot
+
+Platform 3 (Green)
+
+- Short falling platform that gives the player a time limit to plan their next shot
+
+Images  
+Player  
+Background details
+
+Unity Version  
+6000.3.12f1
+
+Other Ideas  
+3D puzzle game with portals  
+2D platformer with portals
+
+Roles  
+Aidan \- Level Design and documentation
+
+Liam \- Programming
+
+Payton \- Programming and Designer Commentary Video
+
+Samuel \- Asset sourcing and implementation
+
+[image1]: <data:image/png;base64,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>
